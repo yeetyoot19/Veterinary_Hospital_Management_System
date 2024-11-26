@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DoctorAppointmentController">
+   <children>
+      <TitledPane animated="false" text="Appointment : Doctor">
+        <content>
+          <AnchorPane prefHeight="520.0" prefWidth="590.0" style="-fx-background-color: #AFE1AF;" stylesheets="@style.css">
+               <children>
+                  <Button layoutX="27.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#handleBackButton" prefHeight="114.0" prefWidth="72.0" text="BACK">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Button>
+                  <TableView fx:id="appointmentTable" layoutX="27.0" layoutY="14.0" prefHeight="358.0" prefWidth="531.0">
+                    <columns>
+	                    <TableColumn fx:id="usernameColumn" prefWidth="112.0" text="Username" />
+				        <TableColumn fx:id="animalnameColumn" prefWidth="115.0" text="Animal Name" />
+				        <TableColumn fx:id="datetimeColumn" prefWidth="140.0" text="Date-Time" />
+				        <TableColumn fx:id="typeOfCheckupColumn" prefWidth="161.0" text="Type of Checkup" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="173.0" layoutY="386.0" prefHeight="20.0" prefWidth="289.0" style="-fx-background-color: #ECFFDC;" text="Add your time slot">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Label>
+                  <DatePicker fx:id="datePicker" layoutX="285.0" layoutY="419.0" prefHeight="34.0" prefWidth="177.0" />
+                  <Label layoutX="172.0" layoutY="425.0" prefHeight="20.0" prefWidth="100.0" style="-fx-background-color: #ECFFDC;" text="Date">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="starttimeField" layoutX="284.0" layoutY="465.0" prefHeight="32.0" prefWidth="178.0" />
+                  <Label layoutX="170.0" layoutY="471.0" prefHeight="20.0" prefWidth="99.0" style="-fx-background-color: #ECFFDC;" text="Starting Time">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Label>
+                  <Button layoutX="484.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#handleAddButton" prefHeight="114.0" prefWidth="73.0" text="ADD">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

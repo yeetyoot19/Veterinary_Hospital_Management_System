@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="590.0" style="-fx-background-color: #AFE1AF;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdoptionController">
+   <children>
+      <MenuBar layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Adoption">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="adoptionTable" layoutX="21.0" layoutY="39.0" prefHeight="307.0" prefWidth="548.0">
+        <columns>
+          <TableColumn fx:id="animalNameColumn" prefWidth="129.60000324249268" text="Pet Name" />
+            <TableColumn fx:id="animalTypeColumn" prefWidth="113.5999755859375" text="Type" />
+            <TableColumn fx:id="animalAgeColumn" prefWidth="75.20002746582031" text="Age" />
+          <TableColumn fx:id="animalGenderColumn" prefWidth="74.4000244140625" text="Gender" />
+            <TableColumn fx:id="animalAttributeColumn" prefWidth="130.0" text="Attribute" />
+        </columns>
+      </TableView>
+      <Button fx:id="adoptButton" layoutX="217.0" layoutY="369.0" mnemonicParsing="false" onMouseClicked="#handleAnimalAdoption" prefHeight="52.0" prefWidth="158.0" text="Adopt">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font></Button>
+      <Button fx:id="backButton" layoutX="218.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#handleBackButton" prefHeight="52.0" prefWidth="158.0" text="Back">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

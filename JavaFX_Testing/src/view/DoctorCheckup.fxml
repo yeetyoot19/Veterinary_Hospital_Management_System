@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DoctorCheckupController">
+   <children>
+      <TitledPane animated="false" text="Checkup : Doctor">
+        <content>
+          <AnchorPane prefHeight="520.0" prefWidth="590.0" style="-fx-background-color: #AFE1AF;" stylesheets="@style.css">
+               <children>
+                  <TableView fx:id="appointmentTableView" layoutX="29.0" layoutY="16.0" prefHeight="290.0" prefWidth="538.0">
+                    <columns>
+                      <TableColumn fx:id="appointmnetnumColumn" prefWidth="87.0" text="Appointment#" />
+                      <TableColumn fx:id="usernameColumn" prefWidth="116.0" text="Username" />
+                        <TableColumn fx:id="animalNameColumn" prefWidth="106.0" text="Animal Name" />
+                        <TableColumn fx:id="checkupTypeColumn" prefWidth="108.0" text="Type of Checkup" />
+                        <TableColumn fx:id="checkupStatusColumn" minWidth="0.0" prefWidth="120.0" text="Checkup Status" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="29.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#handleBackButton" prefHeight="167.0" prefWidth="73.0" text="BACK">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Button>
+                  <Label layoutX="128.0" layoutY="325.0" style="-fx-background-color: #ECFFDC;" text="Animal History">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Label>
+                  <Button fx:id="checkupButton" layoutX="397.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#handleCheckupButton" prefHeight="80.0" prefWidth="170.0" text="CHECKUP DONE">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Button>
+                  <Label layoutX="397.0" layoutY="325.0" style="-fx-background-color: #ECFFDC;" text="Hours taken for Checkup">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="hourstakenField" layoutX="397.0" layoutY="346.0" prefHeight="34.0" prefWidth="170.0" />
+                  <TextArea fx:id="animalHistoryField" layoutX="128.0" layoutY="346.0" prefHeight="142.0" prefWidth="250.0" />
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

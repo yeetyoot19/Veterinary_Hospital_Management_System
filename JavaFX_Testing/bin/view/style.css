@@ -1,0 +1,96 @@
+/* General styling for AnchorPane */
+.anchor-pane {
+    -fx-background-color: #e8f5e9; /* Light green background */
+    -fx-padding: 15; /* Padding around the content */
+}
+
+/* Buttons styling */
+.button {
+    -fx-background-color: #1e88e5; /* Blue background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-padding: 8 15; /* Padding for buttons */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-background-radius: 5;
+    -fx-border-color: #004d40; /* Dark green border */
+    -fx-border-width: 2;
+}
+
+.button:hover {
+    -fx-background-color: #1565c0; /* Darker blue on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #0d47a1; /* Even darker blue on press */
+}
+
+/* Labels styling */
+.label {
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #004d40; /* Dark green text */
+    -fx-font-weight: bold; /* Bold text for emphasis */
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #1e88e5; /* Blue border */
+    -fx-border-width: 2;
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #004d40; /* Dark green text */
+    -fx-padding: 5;
+}
+
+.text-field:focused {
+    -fx-border-color: #004d40; /* Green border when focused */
+}
+
+/* Styling for TableView */
+.table-view {
+    -fx-border-color: #1e88e5; /* Blue border */
+    -fx-border-width: 1; /* Thin border */
+    -fx-background-color: #ffffff; /* White background */
+    -fx-padding: 10; /* Padding inside the table */
+}
+
+.table-view .column-header {
+    -fx-background-color: #1e88e5; /* Blue background for headers */
+    -fx-text-fill: white; /* White text for headers */
+    -fx-font-size: 13px; /* Font size for table headers */
+    -fx-font-weight: bold;
+}
+
+.table-column {
+    -fx-font-size: 12px; /* Font size for table columns */
+    -fx-text-fill: #004d40; /* Dark green text */
+}
+
+/* Styling ChoiceBox */
+.choice-box {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #1e88e5; /* Blue border */
+    -fx-border-width: 2;
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #004d40; /* Dark green text */
+    -fx-padding: 5;
+}
+
+/* Add hover effect for the ChoiceBox */
+.choice-box:hover {
+    -fx-border-color: #004d40; /* Green border on hover */
+}
+
+/* Styling for TitledPane */
+.titled-pane > .title {
+    -fx-background-color: #1e88e5; /* Blue background for title */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.titled-pane > .content {
+    -fx-background-color: #ffffff; /* White background for content */
+    -fx-padding: 10;
+}
